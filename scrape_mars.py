@@ -22,7 +22,7 @@ def scrape():
     url1='https://galaxyfacts-mars.com/'
     tables = pd.read_html(url1)
     df=tables[0]
-    html_table = df.to_html()
+    html_table = df.to_html(header=False, index=False,border=5)
     html_table=html_table.replace('\n', '')
 
 
