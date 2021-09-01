@@ -21,8 +21,9 @@ def scrape():
 
     url1='https://galaxyfacts-mars.com/'
     tables = pd.read_html(url1)
-    
-
+    df=tables[0]
+    html_table = df.to_html()
+    html_table=html_table.replace('\n', '')
 
 
     urls=['https://marshemispheres.com/cerberus.html','https://marshemispheres.com/schiaparelli.html','https://marshemispheres.com/syrtis.html','https://marshemispheres.com/valles.html']
@@ -46,4 +47,4 @@ def scrape():
     featured_image_url='https://spaceimages-mars.com/'+soup.find('img',class_='headerimage')['src']
     browser.quit()
 
-    return {'news_title':title,'news_p':para,'table':tables,'hemisphere_image_urls':hemisphere_image_urls}
+    return {'news_title':title,'news_p':para,'table':html_table,'hemisphere_image_urls':hemisphere_image_urls}
