@@ -47,4 +47,4 @@ def scrape():
     featured_image_url='https://spaceimages-mars.com/'+soup.find('img',class_='headerimage')['src']
     browser.quit()
 
-    return {'news_title':title,'news_p':para,'table':html_table,'hemisphere_image_urls':hemisphere_image_urls}
+    return {'news_title':title,'news_p':para,'table':html_table,'hemisphere_image_urls':hemisphere_image_urls,'featured_image_url':featured_image_url}
