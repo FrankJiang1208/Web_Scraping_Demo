@@ -26,7 +26,7 @@
     <div class='row'>
         <div class='col-md-6'>
                 <h3><strong>Featured Mars Image</strong></h3>
-                <img hred={{listings.featured_image_url}}>
+                <img src={{listings.featured_image_url}}>
                 
         </div>
         <div class='col-md-6'>
@@ -42,10 +42,10 @@
     </div>
     <hr>
     <div class='row'>
-        {% for i in listings.hemisphere_image_urls}
+        {% for i in listings.hemisphere_image_urls%}
         <div class='col-md-4'>
-            <div class="card" style="width: 18rem;">
-                <img src={{i.img_url}} class="card-img-top" alt="{{i.title}}">
+            <div class="card" style="width: 50px;">
+                <img src={{i.img_url}} class="card-img-top" alt="{{i.title}}" style="width: 50px;">
                 <div class="card-body">
                   <p class="card-text">{{i.title}}</p>
                 </div>
