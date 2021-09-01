@@ -16,11 +16,18 @@
       <h1>Mission to Mars</h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
     </div>
+    <div class='row'>
+        <div class='col-md-12'>
+            <h3><strong>Latest Mars News</strong></h3>
+            <h5>{{listings.news_title}}</h5>
+            <p>{{listings.news_p}}</p>
+        </div>
 
+
+    </div>
     <!-- Phone Listings -->
     <div class="row" id="craiglist-listings">
       <div class="col-md-12">
-        <h4 class="heading">{{listings.news_title}} {{listings.news_p}}</h4>
         <small>{{listings.hemisphere_image_urls}}</small>
       </div>
     </div>
