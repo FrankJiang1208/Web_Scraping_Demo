@@ -39,7 +39,6 @@ def scrape():
 
 
 
-
     browser = Browser('chrome', **executable_path, headless=False)
     browser.visit('https://spaceimages-mars.com/')
     html=browser.html
