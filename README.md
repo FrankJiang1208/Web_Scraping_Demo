@@ -1,6 +1,6 @@
-# web-scraping-challenge
+# web-scraping-challeng
 
-Collect information online on Mars and store it in MONGODB and create a new website with all the new information scraped.
+Scraped information on Mars through different websites and store it in MONGODB and create a new website using flask to display all the new information scraped.
 
 Running the program:
 
